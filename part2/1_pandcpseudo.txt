@@ -1,0 +1,81 @@
+ 
+Create mutex lock
+
+Create semaphore:
+ full and empty
+
+Store Ptime and Ctime
+
+Create bounded_buffer struct that holds 
+the size
+the buffer itself
+The starting point of array
+The ending point of array
+
+Create thread_info that holds:
+Pthread id
+Assigned id
+Total number of threads
+Items to produce and consume 
+
+Void* produce(void *arg){
+
+Use struct thread_info
+
+Adds items to bounded buffer as empty spaces with:
+sleep(Ptime)
+semaphore of sem_wait and sem_post
+Mutex lock
+
+}
+
+
+
+Void* consume(void *arg){
+
+Use struct thread_info
+
+Consumes items from bounded buffer as full entires:
+sleep(Ctime)
+semaphore of sem_wait and sem_post
+Mutex lock
+
+}
+
+
+Void spawn_thread(parameter_per_items, num_producers and num_consumers){
+
+Use struct thread_info
+
+Allocate memory for producer and consumer together
+
+Create & set attributes of producer threads
+
+create & set attributes of consumer threads
+
+wait for all threads to exit
+
+}
+
+
+Int main(){
+
+Validate Input correctly through command line
+
+Timestamp start
+
+Grab all the 6 values from command line
+
+Initialize bounded buffer struct and assign all the necessary input values to respective bounded buffer struct 
+
+initialize semaphores and initialize mutex lock
+
+Show whats running
+
+Transfer the parameter, num_producers and num_consumers to spawn_thread function.
+
+Timestamp end
+
+Show the time duration of the code
+
+}
